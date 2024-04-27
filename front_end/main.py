@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 
 # def create_app(): # TODO: Factor this into its own function later, setting as a global var for now
@@ -8,5 +8,5 @@ Bootstrap(app)
 
 @app.route("/")
 def hello_world():
-    return '<h1>Hello world</h1>'
-    # return render_template('base.html') # TODO still working on this
+    # return '<h1>Hello world</h1>'
+    return render_template('base.html') # TODO still working on this
