@@ -3,7 +3,6 @@ from flask_bootstrap import Bootstrap
 
 # def create_app(): # TODO: Factor this into its own function later, setting as a global var for now
 app = Flask(__name__)
-Bootstrap(app)
 # return app
 
 @app.route("/")
