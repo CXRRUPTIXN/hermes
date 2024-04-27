@@ -8,5 +8,4 @@ Bootstrap(app)
 
 @app.route("/")
 def hello_world():
-    # return '<h1>Hello world</h1>'
-    return render_template('base.html') # TODO still working on this
+    return render_template('base.html')
